@@ -13,12 +13,13 @@ while i<=5:
     if EnterTheNumber<=16:
         print("Ohh! sorry your guess is wrong,try to increase the number.Better luck!!next time")
     elif EnterTheNumber>=18:
-        print("Ohh! sorry your guess is wrong,try to decrase the number.Better luck!!next time")
+        print("Ohh! sorry your guess is wrong,try to decrease the number.Better luck!!next time")
     else:
         print("Ohh! congragulation your guess is correct") 
         print("Number of chances you took to guess is ",i)
         break 
+   
+    print("You have only",5-i,"chances left")
     i+=1
-    print("You have {} chances left" ,i)
 if i > 5:
     print("Game over")               
