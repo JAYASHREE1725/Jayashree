@@ -1,0 +1,24 @@
+# Guess the number is a random game
+number = 17
+
+print("Welcom to this guess the random game")
+print("You have total 5 chances to guess the number which is less than 50")
+print("All the best")
+
+
+i = 1
+
+while i<=5:
+    EnterTheNumber = int(input())
+    if EnterTheNumber<=16:
+        print("Ohh! sorry your guess is wrong,try to increase the number.Better luck!!next time")
+    elif EnterTheNumber>=18:
+        print("Ohh! sorry your guess is wrong,try to decrase the number.Better luck!!next time")
+    else:
+        print("Ohh! congragulation your guess is correct") 
+        print("Number of chances you took to guess is ",i)
+        break 
+    i+=1
+    print("You have {} chances left" ,i)
+if i > 5:
+    print("Game over")               
